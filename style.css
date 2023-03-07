@@ -1,0 +1,125 @@
+/**
+Theme Name: Ejoweb Base Theme
+Theme URI: https://github.com/ejoweb/ejo-base-theme/
+Author: Erik Joling
+Author URI: https://www.ejoweb.nl/
+Description: WordPress blokkenthema voor Ejoweb Base Theme
+Requires at least: 6.2
+Tested up to: 6.2
+Requires PHP: 7.4
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ebt
+*/
+
+
+/* -------------------------------- GENERAL -------------------------------- */
+
+/*
+ * Smooth scroll when `to top`-link is clicked
+ */
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Remove global padding from site container */
+.wp-site-blocks {
+	padding: 0;
+}
+
+:where(.wp-block-group.has-background) {
+	padding-top: var(--wp--style--root--padding-top);
+	padding-bottom: var(--wp--style--root--padding-bottom);
+	padding-right: var(--wp--style--root--padding-right);
+	padding-left: var(--wp--style--root--padding-left);
+}
+
+/* Overwrite default core behaviour */
+.has-global-padding :where(.has-global-padding) {
+	padding-right: var(--wp--style--root--padding-right);
+	padding-left: var(--wp--style--root--padding-left);
+}
+
+.has-global-padding :where(.has-global-padding) > .alignfull {
+	margin-right: calc(var(--wp--style--root--padding-right) * -1);
+	margin-left: calc(var(--wp--style--root--padding-left) * -1);
+}
+
+
+/* -------------------------------- CONTEXT -------------------------------- */
+
+
+/**
+ * Site container 
+ */
+
+
+/**
+ * Site header 
+ */
+
+
+/**
+ * Site main 
+ */
+
+
+/**
+ * Banner 
+ */
+/* main > .wp-block-post-content:first-child > .wp-block-cover:first-child,
+main > .wp-block-cover:first-child {
+	min-height: var(--wp--custom--spacing--banner-height);
+}
+
+main > .wp-block-post-content:first-child > .wp-block-cover:first-child > .wp-block-cover__inner-container,
+main > .wp-block-cover:first-child > .wp-block-cover__inner-container {
+	max-width: 640px;
+}
+
+main > .wp-block-post-content:first-child > .wp-block-post-featured-image:first-child img,
+main > .wp-block-post-featured-image:first-child img,
+main > .wp-block-post-content:first-child > .wp-block-image:first-child img,
+main > .wp-block-image:first-child img {
+	height: var(--wp--custom--spacing--banner-height);
+	object-fit: cover;
+	border-radius: 0;
+} */
+
+
+/**
+ * Site footer 
+ */
+
+
+
+/* ----------------------------- CUSTOM CLASSES ----------------------------- */
+
+
+
+/* ------------------------------ BREAKPOINTS ------------------------------- */
+
+@media screen and (min-width: 720px) {
+
+
+}
+
+
+/* Breakpoint for mobile navigation */
+@media screen and (max-width: 1080px) {
+
+}
+
+/* Breakpoint for tiny screens */
+@media screen and (max-width: 480px) {
+		
+
+}
+
+/* ------------------------------- TEMPLATES -------------------------------- */
